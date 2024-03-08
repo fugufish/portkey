@@ -13,3 +13,5 @@ gem "rubocop", "~> 1.21"
 gem "rubocop-performance"
 gem "rubocop-rspec"
 gem "rubocop-thread_safety"
+
+gem "dotenv"
