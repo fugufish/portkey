@@ -1,0 +1,79 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.portkey.ai/v1/completions
+    body:
+      encoding: UTF-8
+      string: '{"model":"gpt-3.5-turbo-instruct","prompt":"What is the capital of
+        the United States?"}'
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      x-portkey-api-key:
+      - <PORTKEY_API_KEY>
+      User-Agent:
+      - Faraday v2.9.0
+      x-portkey-virtual-key:
+      - <PORTKEY_VIRTUAL_KEY>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Fri, 08 Mar 2024 13:43:43 GMT
+      content-type:
+      - application/json
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      access-control-allow-origin:
+      - "*"
+      cache-control:
+      - no-cache, must-revalidate
+      strict-transport-security:
+      - max-age=15724800; includeSubDomains
+      openai-model:
+      - gpt-3.5-turbo-instruct
+      openai-organization:
+      - portkey-rb
+      openai-processing-ms:
+      - '398'
+      openai-version:
+      - '2020-10-01'
+      x-portkey-cache-status:
+      - DISABLED
+      x-portkey-last-used-option-index:
+      - config
+      x-portkey-retry-attempt-count:
+      - '0'
+      x-ratelimit-limit-requests:
+      - '200'
+      x-ratelimit-limit-tokens:
+      - '90000'
+      x-ratelimit-remaining-requests:
+      - '199'
+      x-ratelimit-remaining-tokens:
+      - '89974'
+      x-ratelimit-reset-requests:
+      - 7m12s
+      x-ratelimit-reset-tokens:
+      - 17ms
+      vary:
+      - Accept-Encoding
+      server:
+      - cloudflare
+      content-encoding:
+      - gzip
+      alt-svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"cmpl-12345","object":"text_completion","created":1709905423,"model":"gpt-3.5-turbo-instruct","choices":[{"text":"\n\nThe
+        capital of the United States is Washington, D.C. ","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":9,"completion_tokens":14,"total_tokens":23}}'
+  recorded_at: Fri, 08 Mar 2024 13:43:43 GMT
+recorded_with: VCR 6.2.0

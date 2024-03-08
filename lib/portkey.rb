@@ -34,3 +34,4 @@ module Portkey
 end
 
 require "portkey/completions"
+require "portkey/chats"

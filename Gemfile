@@ -15,3 +15,6 @@ gem "rubocop-rspec"
 gem "rubocop-thread_safety"
 
 gem "dotenv"
+
+gem "vcr"
+gem "webmock"
